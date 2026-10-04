@@ -1,7 +1,0 @@
-Measure ID,Measure Name,avg_readmission_rate
-READM_30_AMI,Acute Myocardial Infarction (AMI) 30-Day Readmission Rate,14.0696716750139
-READM_30_CABG,Rate of readmission for CABG,11.0427594070696
-READM_30_COPD,Rate of readmission for chronic obstructive pulmonary disease (COPD) patients,19.3386641221374
-READM_30_HF,Heart failure (HF) 30-Day Readmission Rate,20.267648
-READM_30_HIP_KNEE,Rate of readmission after hip/knee replacement,4.26935717738038
-READM_30_PN,Pneumonia (PN) 30-Day Readmission Rate,16.9088762446657
