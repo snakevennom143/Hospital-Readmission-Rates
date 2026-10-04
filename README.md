@@ -5,7 +5,7 @@ Analysis of CMS hospital readmission data to identify high-risk clinical measure
 and geographic patterns across facility, county, and state levels.
 
 ## Data
-- **Source**: CMS Hospital Compare (public data)
+- **Source**: CMS Hospital Compare (public data, from Kaggle)
 - **Scope**: 4682 facilities, 50 states (+5 territories), 6 readmission measures
 - **Period**: 30 June 2019 - 30 December 2022
 
@@ -13,6 +13,9 @@ and geographic patterns across facility, county, and state levels.
 - **SQL**: Data cleaning, aggregation, and validation queries
 - **Excel**: Report building and summary statistics, some additional cleaning with Power Query
 - **Aggregation levels**: Facility / County / State / Clinical Measure
+- **Methodology Summary**:
+  - **SQL**: Selected for 30-day readmission rate entries, removed rows with no score, determined average readmission rate with AVG()
+  - **Excel**: Created heatmap figure, fixed formatting with Power Query, compiled and reported data 
 
 ## Key Findings
 - Heart Failure (20.3%) and COPD (19.3%) have the highest readmission rates
