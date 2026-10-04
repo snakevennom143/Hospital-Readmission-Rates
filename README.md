@@ -23,6 +23,18 @@ and geographic patterns across facility, county, and state levels.
 - **Methodology Summary**:
   - **SQL**: Filtered for READM_30_* measure IDs, excluded rows with NULL or suppressed scores (CMS suppresses rates for facilities with <25 cases), and aggregated using AVG() grouped by facility/state/county/measure. Validated record counts against source (4,682 facilities retained after filtering).
   - **Excel**: Used Power Query to standardize facility names and state abbreviations, built a heatmap of readmission rates by measure, and compiled summary tables.
+ 
+## Sample Query
+```sql
+SELECT "County/Parish" AS county,
+	   "State" AS state,
+       AVG("Score") AS avg_readmission_rate
+FROM "Unplanned_Hospital_Visits-Hospital"
+WHERE "Measure ID" = 'READM_30_HOSP_WIDE'
+	AND "Score" != "Not Available"
+GROUP BY county, state
+ORDER BY state, avg_readmission_rate DESC;
+```
 
 ## Key Findings
 - Heart Failure (20.3%) and COPD (19.3%) have the highest readmission rates
