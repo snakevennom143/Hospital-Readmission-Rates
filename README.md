@@ -9,7 +9,7 @@ and geographic patterns across facility, county, and state levels.
 
 ## Preview
 
-![Readmission Rate by State](Hospital-Readmissions/images/heatmap.png)
+![Readmission Rate by State](images/heatmap.png)
 
 ## Data
 - **Source**: CMS Hospital Compare (public data, from Kaggle)
