@@ -23,13 +23,15 @@ and geographic patterns across facility, county, and state levels.
 - State-level range: 14% to 15.5%
 
 ## Files
-sql/ # SQL Scripts for cleaning and aggregation
+<code>sql/ # SQL Scripts for cleaning and aggregation
 ├── avg_readmission_by_facility.sql 
 ├── avg_readmission_by_state.sql
 ├── avg_readmission_by_county.sql
 └── avg_readmission_by_cause.sql
 excel/ # Report workbook
 └── HospitalReadmissions.xlsx
+README.md
+</code>
 
 ## Limitations
 - Averages are unweighted (each facility contributes equally)
